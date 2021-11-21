@@ -1,0 +1,5 @@
+// run this in a mingw64 terminal or on Linux
+loadFile("External/package.mo"); getErrorString();
+system("make -C External/Resources/Sources"); getErrorString();
+simulate(External.Test, stopTime=3); getErrorString();
+plot({x, y}); getErrorString();
