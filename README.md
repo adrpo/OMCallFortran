@@ -20,6 +20,7 @@ make
 == Example session
 
 Build the code:
+
 ````
 adrpo33@ida-0030 MINGW64 /c/home/adrpo33/dev/OMTesting/OMCallFortran
 # make -C External/Resources/Sources/
@@ -32,6 +33,7 @@ make: Leaving directory '/c/home/adrpo33/dev/OMTesting/OMCallFortran/External/Re
 ````
 
 Run the example:
+
 ````
 adrpo33@ida-0030 MINGW64 /c/home/adrpo33/dev/OMTesting/OMCallFortran
 # omc External.mos
@@ -58,3 +60,18 @@ end SimulationResult;
 true
 ""
 ````
+
+Clean it up:
+
+````
+adrpo33@ida-0030 MINGW64 /c/home/adrpo33/dev/OMTesting/OMCallFortran
+# rm External.Test*
+````
+
+Clean it via git: 
+
+````
+adrpo33@ida-0030 MINGW64 /c/home/adrpo33/dev/OMTesting/OMCallFortran
+# git clean -fdx
+````
+
